@@ -1,16 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Main extends React.Component{
+//importamos el componente LikesComponent
+import { LikesComponent } from './components/like.jsx'
+
+class Main extends React.Component {
     //implementar render que es el encargado de regresar una estructura de JSX
-    render(){
+    render() {
         //sólo debe regresar UN elemento, así que podemos tener UN elemento único como contenedor
+
+        //<LikeComponent /> Es el componente que importamos, y lo usamos como una etiqueta...
+        // ? Cómo se ponen comentarios en el return? 
         return (
             <div>
                 HOLA MUNDO
+                <LikeComponent />
             </div>
         );
     }
 }
 
-ReactDOM.render(<Main/>, document.getElementById('app'));
+ReactDOM.render(<Main />, document.getElementById('app')); 
