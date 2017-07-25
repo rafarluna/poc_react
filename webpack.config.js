@@ -8,5 +8,8 @@ module.exports = {
     loaders: [
       {test: /\.jsx?/, loader: 'babel-loader'}
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
 }
