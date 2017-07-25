@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 // importamos el componente LikesComponent
 import Like from './components/Like'
 
+//Component
 class Main extends React.Component {
     // implementar render que es el encargado de regresar una estructura de JSX
   render () {
